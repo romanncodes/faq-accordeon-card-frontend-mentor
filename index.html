@@ -13,7 +13,7 @@
   <body>
     <div class="container">
       <div class="left-container">
-        <img src="img/illustration-woman-online-mobile.svg" alt="" />
+        <div class="image"></div>
       </div>
       <div class="right-container">
         <h1>FAQ</h1>
@@ -23,23 +23,21 @@
             <span>How many team members can I invite?</span>
             <img src="img/icon-arrow-down.svg" alt="" />
           </div>
-
-          
         </div>
+
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, non
           vero. Mollitia commodi praesentium officia iusto quia nulla tenetur
           laudantium minus aliquam quae eligendi pariatur blanditiis, corrupti
           modi odit earum.
         </p>
+
         <hr />
         <div class="item">
           <div class="list">
             <span>What is the maximun file upload size?</span>
             <img src="img/icon-arrow-down.svg" alt="" />
           </div>
-
-          
         </div>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, non
@@ -53,8 +51,6 @@
             <span>How do I reset my password?</span>
             <img src="img/icon-arrow-down.svg" alt="" />
           </div>
-
-          
         </div>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, non
@@ -68,8 +64,6 @@
             <span>Can I cancel my subscription?</span>
             <img src="img/icon-arrow-down.svg" alt="" />
           </div>
-
-          
         </div>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, non
@@ -83,8 +77,6 @@
             <span>Do you provide additional support?</span>
             <img src="img/icon-arrow-down.svg" alt="" />
           </div>
-
-          
         </div>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, non
@@ -94,30 +86,8 @@
         </p>
         <hr />
       </div>
-      </div>
     </div>
 
-    <script>
-      var acc = document.getElementsByClassName("item");
-      var i;
-
-      for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
-          this.classList.toggle("active");
-
-          /* Toggle between hiding and showing the active panel */
-          var panel = this.nextElementSibling;
-
-          if (panel.style.display === "block") {
-            panel.style.display = "none";
-            this.style.fontWeight = "400";
-          } else {
-            panel.style.display = "block";
-            this.style.color = "--var(Verydarkdesaturatedblue)";
-            this.style.fontWeight = "700";
-          }
-        });
-      }
-    </script>
+    <script src="js/app.js"></script>
   </body>
 </html>

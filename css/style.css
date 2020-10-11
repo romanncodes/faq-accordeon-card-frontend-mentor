@@ -19,8 +19,9 @@
 }
 
 body {
-  background: var(--Softviolet);
+  background: linear-gradient(var(--Softviolet), var(--Softblue)) no-repeat;
   margin: 0px;
+  height: 100vh;
 }
 hr {
   border: 0px;
@@ -42,8 +43,19 @@ hr {
   background-repeat: no-repeat;
   background-position-x: center;
   background-size: 220px 90px;
+  height: 100px;
+}
+.image {
+  height: 200px;
+  background-image: url("../img/illustration-woman-online-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 240px;
+  position: relative;
+  top: -105px;
 }
 
+/*
 .left-container img {
   position: relative;
   bottom: 98px;
@@ -51,9 +63,10 @@ hr {
   left: 50%;
   transform: translateX(-50%);
 }
+*/
 
 .right-container {
-  margin-top: -80px;
+  /*margin-top: -80px;*/
 }
 .right-container h1 {
   text-align: center;
@@ -68,6 +81,7 @@ hr {
   margin-bottom: 16px;
   cursor: pointer;
 }
+
 .item:hover span {
   color: var(--Softred);
 }
@@ -79,5 +93,33 @@ p {
   color: var(--Darkgrayishblue);
   display: none;
   overflow: hidden;
-  transition: 4s;
+  line-height: 1.5em;
+  max-height: 0px;
+  transition: max-height 0.4s ease-out;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 70px 150px;
+  }
+
+  .left-container {
+    border-radius: 1px solid green;
+    background-image: url("../img/bg-pattern-desktop.svg");
+    background-size: 400px;
+    height: 150%;
+    position: relative;
+    left: -100px;
+  }
+  .image {
+    background-image: url("../img/illustration-box-desktop.svg"),
+      url("../img/illustration-woman-online-desktop.svg");
+    background-size: 150px, contain;
+    background-position: left, top;
+    height: 360px;
+    top: -10px;
+  }
 }
