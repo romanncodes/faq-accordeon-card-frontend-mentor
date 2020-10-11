@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faq</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-container">
+        <img src="img/illustration-woman-online-mobile.svg" alt="" />
+      </div>
+      <div class="right-container">
+        <h1>FAQ</h1>
+
+        <div class="item">
+          <div class="list">
+            <span>How many team members can I invite?</span>
+            <img src="img/icon-arrow-down.svg" alt="" />
+          </div>
+
+          
+        </div>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, non
+          vero. Mollitia commodi praesentium officia iusto quia nulla tenetur
+          laudantium minus aliquam quae eligendi pariatur blanditiis, corrupti
+          modi odit earum.
+        </p>
+        <hr />
+        <div class="item">
+          <div class="list">
+            <span>What is the maximun file upload size?</span>
+            <img src="img/icon-arrow-down.svg" alt="" />
+          </div>
+
+          
+        </div>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, non
+          vero. Mollitia commodi praesentium officia iusto quia nulla tenetur
+          laudantium minus aliquam quae eligendi pariatur blanditiis, corrupti
+          modi odit earum.
+        </p>
+        <hr />
+        <div class="item">
+          <div class="list">
+            <span>How do I reset my password?</span>
+            <img src="img/icon-arrow-down.svg" alt="" />
+          </div>
+
+          
+        </div>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, non
+          vero. Mollitia commodi praesentium officia iusto quia nulla tenetur
+          laudantium minus aliquam quae eligendi pariatur blanditiis, corrupti
+          modi odit earum.
+        </p>
+        <hr />
+        <div class="item">
+          <div class="list">
+            <span>Can I cancel my subscription?</span>
+            <img src="img/icon-arrow-down.svg" alt="" />
+          </div>
+
+          
+        </div>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, non
+          vero. Mollitia commodi praesentium officia iusto quia nulla tenetur
+          laudantium minus aliquam quae eligendi pariatur blanditiis, corrupti
+          modi odit earum.
+        </p>
+        <hr />
+        <div class="item">
+          <div class="list">
+            <span>Do you provide additional support?</span>
+            <img src="img/icon-arrow-down.svg" alt="" />
+          </div>
+
+          
+        </div>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, non
+          vero. Mollitia commodi praesentium officia iusto quia nulla tenetur
+          laudantium minus aliquam quae eligendi pariatur blanditiis, corrupti
+          modi odit earum.
+        </p>
+        <hr />
+      </div>
+      </div>
+    </div>
+
+    <script>
+      var acc = document.getElementsByClassName("item");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+
+          /* Toggle between hiding and showing the active panel */
+          var panel = this.nextElementSibling;
+
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+            this.style.fontWeight = "400";
+          } else {
+            panel.style.display = "block";
+            this.style.color = "--var(Verydarkdesaturatedblue)";
+            this.style.fontWeight = "700";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
